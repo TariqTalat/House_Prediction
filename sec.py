@@ -16,8 +16,8 @@ from sklearn_features.transformers import DataFrameSelector
 
 
 ## Read the CSV file using pandas
-FILE_PATH = os.path.join(os.getcwd(), 'housing.csv')
-df_housing = pd.read_csv(FILE_PATH)
+filepath = os.path.join(os.getcwd(), 'housing.csv')
+df_housing = pd.read_csv(filepath)
 
 ## Replace the  (<1H OCEAN) to (1H OCEAN) -- will cause ane errors in Deploymnet
 df_housing['ocean_proximity'] = df_housing['ocean_proximity'].replace('<1H OCEAN', '1H OCEAN')

@@ -6,6 +6,7 @@ import joblib
 import os 
 # the function I craeted to process the data in utils.py
 from sec import preprocess_new
+import gunicorn
 
 
 # Intialize the Flask APP
