@@ -56,9 +56,9 @@ def predict():
         y_pred_new = model.predict(X_processed)
         y_pred_new = '{:.4f}'.format(y_pred_new[0])
 
-        return render_template('predict.html', pred_val=y_pred_new)
+        return render_template('Predict.html', pred_val=y_pred_new)
     else:
-        return render_template('predict.html')
+        return render_template('Predict.html')
 
 
 # Route for About page
